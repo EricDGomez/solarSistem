@@ -10,13 +10,13 @@
 
 export function minBy(array, cb) {
   // Your code goes here...
-  if (arr.length === 0) {
+  if (array.length === 0) {
     return undefined;
   }
-  let minVal = arr[0];
-  let minResult = cb(arr[0]);
+  let minVal = array[0];
+  let minResult = cb(array[0]);
   for (let element of array) {
-    const result = cb(arr[i]);
+    const result = cb(element);
     if (result < minResult) {
       minResult = result;
       minVal = element;
@@ -27,13 +27,13 @@ export function minBy(array, cb) {
 
 export function maxBy(array, cb) {
   // Your code goes here...
-  if (arr.length === 0) {
+  if (array.length === 0) {
     return undefined;
   }
-  let maxVal = arr[0];
-  let maxResult = cb(arr[0]);
+  let maxVal = array[0];
+  let maxResult = cb(array[0]);
   for (let element of array) {
-    const result = cb(arr[i]);
+    const result = cb(element);
     if (result > maxVal) {
       maxResult = result;
       maxVal = element;
