@@ -34,7 +34,7 @@ export function maxBy(array, cb) {
   let maxResult = cb(array[0]);
   for (let element of array) {
     const result = cb(element);
-    if (result > maxVal) {
+    if (result > maxResult) {
       maxResult = result;
       maxVal = element;
     }
